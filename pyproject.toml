@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "supplementary-physics-bounded-residual-lstm"
+version = "0.1.0"
+description = "Reproduction code for our paper 'Physics Residual-Bounded LSTM for Safe Vehicle State Prediction.'"
+authors = ["Alexandra Baier <alx.baier@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+deepsysid = {git = "https://github.com/AlexandraBaier/deepsysid"}
+torch = "^1.13.0"
+numpy = "^1.23.5"
+matplotlib = "^3.6.2"
+pandas = "^1.5.2"
+jupyter = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
