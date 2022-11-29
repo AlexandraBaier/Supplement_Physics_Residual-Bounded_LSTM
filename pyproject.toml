@@ -1,8 +1,10 @@
 [tool.poetry]
 name = "supplement-physics-bounded-residual-lstm"
-version = "0.1.0"
+version = "0.1.1"
 description = "Reproduction code for our paper 'Physics Residual-Bounded LSTM for Safe Vehicle State Prediction.'"
 authors = ["Alexandra Baier <alx.baier@gmail.com>"]
+packages = [{include = "pbrl", from = "src"}]
+license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.8"

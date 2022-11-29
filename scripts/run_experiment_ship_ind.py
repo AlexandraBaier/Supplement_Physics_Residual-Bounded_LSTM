@@ -2,7 +2,7 @@ import argparse
 import pathlib
 import subprocess
 
-from utils_pbrl import load_environment
+from pbrl_utils import load_environment
 
 
 def main():

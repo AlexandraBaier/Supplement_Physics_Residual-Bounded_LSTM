@@ -5,8 +5,8 @@ This repository contains the necessary scripts to reproduce the results from our
 
 Clone this repository and install dependencies:
 ```shell
-git clone ...
-cd ...
+git clone https://github.com/AlexandraBaier/Supplement_Physics_Residual-Bounded_LSTM.git
+cd Supplement_Physics_Residual-Bounded_LSTM
 poetry install
 ```
 
