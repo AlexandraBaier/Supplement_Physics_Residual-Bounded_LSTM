@@ -19,10 +19,10 @@ python scripts/setup_environment.py
 
 To run the experiments for the ship dataset run the following two scripts in order:
 ```shell
-python scripts/run_experiment_ship_ind.py {device_idx}
-python scripts/run_experiment_ship_ood.py {device_idx}
+python scripts/run_experiment_ship_ind.py {device}
+python scripts/run_experiment_ship_ood.py {device}
 ```
-where `device_idx` is the identifier for the GPU to run the experiments on. 
+where `device` is the identifier (an integer starting at 0) for the GPU to run the experiments on. 
 If you only have one GPU, set the value to `0`.
 
 If these scripts are stopped for any reason, you can rerun them without issue. 
@@ -30,7 +30,7 @@ If these scripts are stopped for any reason, you can rerun them without issue.
 
 To run the experiments for the Pelican dataset run the following script:
 ```shell
-python scripts/run_experiment_pelican.py {device_idx}
+python scripts/run_experiment_pelican.py {device}
 ```
 
 Trained models are found in `models`, results in `results`, and datasets in `datasets`.

@@ -12,10 +12,10 @@ from scripts.utils_pbrl import load_environment
 
 def main():
     parser = argparse.ArgumentParser('Run experiments for the 4-DOF ship in-distribution dataset.')
-    parser.add_argument('device-idx')
+    parser.add_argument('device')
     args = parser.parse_args()
 
-    device_idx = int(args.device_idx)
+    device_idx = int(args.device)
 
     main_path = pathlib.Path(__file__).parent.parent.absolute()
     configuration_path = main_path.joinpath('configuration').joinpath('ship.json')

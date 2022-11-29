@@ -257,7 +257,7 @@ torch-cpu = ["torch (==1.11.0)"]
 type = "git"
 url = "https://github.com/AlexandraBaier/deepsysid"
 reference = "master"
-resolved_reference = "1fc61165797675a4e7b3c84e0282bd72d99ad418"
+resolved_reference = "a19f6a797154e3a6f534a139cabc260923f3dbcc"
 
 [[package]]
 name = "defusedxml"
@@ -731,21 +731,21 @@ test = ["pytest", "coverage", "requests", "testpath", "nbval", "pytest-playwrigh
 
 [[package]]
 name = "nbclient"
-version = "0.7.0"
+version = "0.7.1"
 description = "A client library for executing notebooks. Formerly nbconvert's ExecutePreprocessor."
 category = "main"
 optional = false
 python-versions = ">=3.7.0"
 
 [package.dependencies]
-jupyter-client = ">=6.1.5"
-nbformat = ">=5.0"
-nest-asyncio = "*"
-traitlets = ">=5.2.2"
+jupyter-client = ">=6.1.12"
+nbformat = ">=5.1"
+traitlets = ">=5.3"
 
 [package.extras]
-sphinx = ["autodoc-traits", "mock", "moto", "myst-parser", "Sphinx (>=1.7)", "sphinx-book-theme"]
-test = ["black", "check-manifest", "flake8", "ipykernel", "ipython", "ipywidgets", "mypy", "nbconvert", "pip (>=18.1)", "pre-commit", "pytest (>=4.1)", "pytest-asyncio", "pytest-cov (>=2.6.1)", "setuptools (>=60.0)", "testpath", "twine (>=1.11.0)", "xmltodict"]
+dev = ["pre-commit"]
+docs = ["autodoc-traits", "mock", "moto", "myst-parser", "nbclient", "sphinx-book-theme", "sphinx (>=1.7)"]
+test = ["ipykernel", "ipython", "ipywidgets", "nbconvert (>=7.0.0)", "pytest-asyncio", "pytest-cov (>=4.0)", "pytest (>=7.0)", "testpath", "xmltodict"]
 
 [[package]]
 name = "nbconvert"
