@@ -151,8 +151,8 @@
         "batch_size": 256,
         "learning_rate": 0.0025,
         "epochs_initializer": 600,
-        "epochs_parallel": 200,
-        "epochs_feedback": 800,
+        "epochs_parallel": 300,
+        "epochs_feedback": 1000,
         "loss": "mse"
       },
       "flexible_parameters": {
@@ -181,8 +181,8 @@
         "batch_size": 256,
         "learning_rate": 0.0025,
         "epochs_initializer": 600,
-        "epochs_parallel": 200,
-        "epochs_feedback": 800,
+        "epochs_parallel": 300,
+        "epochs_feedback": 1000,
         "loss": "mse"
       },
       "flexible_parameters": {
@@ -211,8 +211,8 @@
         "batch_size": 256,
         "learning_rate": 0.0025,
         "epochs_initializer": 600,
-        "epochs_parallel": 200,
-        "epochs_feedback": 800,
+        "epochs_parallel": 300,
+        "epochs_feedback": 1000,
         "m": 1.6,
         "g": 9.81,
         "kt": 2.35e-14,
@@ -248,8 +248,8 @@
         "batch_size": 256,
         "learning_rate": 0.0025,
         "epochs_initializer": 600,
-        "epochs_parallel": 200,
-        "epochs_feedback": 800,
+        "epochs_parallel": 300,
+        "epochs_feedback": 1000,
         "m": 1.6,
         "g": 9.81,
         "kt": 2.35e-14,
@@ -285,8 +285,178 @@
         "batch_size": 256,
         "learning_rate": 0.0025,
         "epochs_initializer": 600,
-        "epochs_parallel": 200,
-        "epochs_feedback": 800,
+        "epochs_parallel": 300,
+        "epochs_feedback": 1000,
+        "m": 1.6,
+        "g": 9.81,
+        "kt": 2.35e-14,
+        "Ix": 0.002,
+        "Iy": 0.002,
+        "Iz": 0.001,
+        "kr": 0.0099,
+        "loss": "mse"
+      },
+      "flexible_parameters": {
+        "recurrent_dim": [
+          32,
+          64,
+          128,
+          192,
+          256,
+          512
+        ],
+        "num_recurrent_layers": [
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    }, {
+      "model_base_name": "Hybrid-Lin-1P",
+      "model_class": "deepsysid.models.hybrid.bounded_residual.HybridLinearModel",
+      "static_parameters": {
+        "dropout": 0.25,
+        "sequence_length": 50,
+        "batch_size": 256,
+        "learning_rate": 0.0025,
+        "epochs_initializer": 600,
+        "epochs_parallel": 1300,
+        "epochs_feedback": 0,
+        "loss": "mse"
+      },
+      "flexible_parameters": {
+        "recurrent_dim": [
+          32,
+          64,
+          128,
+          192,
+          256,
+          512
+        ],
+        "num_recurrent_layers": [
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "model_base_name": "Hybrid-Qua-1P",
+      "model_class": "deepsysid.models.hybrid.bounded_residual.HybridQuadraticModel",
+      "static_parameters": {
+        "dropout": 0.25,
+        "sequence_length": 50,
+        "batch_size": 256,
+        "learning_rate": 0.0025,
+        "epochs_initializer": 600,
+        "epochs_parallel": 1300,
+        "epochs_feedback": 0,
+        "loss": "mse"
+      },
+      "flexible_parameters": {
+        "recurrent_dim": [
+          32,
+          64,
+          128,
+          192,
+          256,
+          512
+        ],
+        "num_recurrent_layers": [
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "model_base_name": "Hybrid-Bas-1P",
+      "model_class": "deepsysid.models.hybrid.bounded_residual.HybridBasicQuadcopterModel",
+      "static_parameters": {
+        "dropout": 0.25,
+        "sequence_length": 50,
+        "batch_size": 256,
+        "learning_rate": 0.0025,
+        "epochs_initializer": 600,
+        "epochs_parallel": 1300,
+        "epochs_feedback": 0,
+        "m": 1.6,
+        "g": 9.81,
+        "kt": 2.35e-14,
+        "Ix": 0.002,
+        "Iy": 0.002,
+        "Iz": 0.001,
+        "kr": 0.0099,
+        "loss": "mse"
+      },
+      "flexible_parameters": {
+        "recurrent_dim": [
+          32,
+          64,
+          128,
+          192,
+          256,
+          512
+        ],
+        "num_recurrent_layers": [
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "model_base_name": "Hybrid-Bas+Lin-1P",
+      "model_class": "deepsysid.models.hybrid.bounded_residual.HybridLinearBasicQuadcopterModel",
+      "static_parameters": {
+        "dropout": 0.25,
+        "sequence_length": 50,
+        "batch_size": 256,
+        "learning_rate": 0.0025,
+        "epochs_initializer": 600,
+        "epochs_parallel": 1300,
+        "epochs_feedback": 0,
+        "m": 1.6,
+        "g": 9.81,
+        "kt": 2.35e-14,
+        "Ix": 0.002,
+        "Iy": 0.002,
+        "Iz": 0.001,
+        "kr": 0.0099,
+        "loss": "mse"
+      },
+      "flexible_parameters": {
+        "recurrent_dim": [
+          32,
+          64,
+          128,
+          192,
+          256,
+          512
+        ],
+        "num_recurrent_layers": [
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "model_base_name": "Hybrid-Bas+Qua-1P",
+      "model_class": "deepsysid.models.hybrid.bounded_residual.HybridQuadraticBasicQuadcopterModel",
+      "static_parameters": {
+        "dropout": 0.25,
+        "sequence_length": 50,
+        "batch_size": 256,
+        "learning_rate": 0.0025,
+        "epochs_initializer": 600,
+        "epochs_parallel": 1300,
+        "epochs_feedback": 0,
         "m": 1.6,
         "g": 9.81,
         "kt": 2.35e-14,
