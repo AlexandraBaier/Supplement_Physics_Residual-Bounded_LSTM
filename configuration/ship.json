@@ -100,7 +100,6 @@
       },
       "flexible_parameters": {
         "recurrent_dim": [
-          32,
           64,
           128,
           192,
@@ -110,8 +109,7 @@
         "num_recurrent_layers": [
           2,
           3,
-          4,
-          5
+          4
         ]
       }
     },
@@ -158,7 +156,6 @@
       },
       "flexible_parameters": {
         "recurrent_dim": [
-          32,
           64,
           128,
           192,
@@ -188,7 +185,6 @@
       },
       "flexible_parameters": {
         "recurrent_dim": [
-          32,
           64,
           128,
           192,
@@ -237,7 +233,6 @@
       },
       "flexible_parameters": {
         "recurrent_dim": [
-          32,
           64,
           128,
           192,
@@ -247,8 +242,7 @@
         "num_recurrent_layers": [
           2,
           3,
-          4,
-          5
+          4
         ]
       }
     },
@@ -296,7 +290,6 @@
       },
       "flexible_parameters": {
         "recurrent_dim": [
-          32,
           64,
           128,
           192,
@@ -306,8 +299,7 @@
         "num_recurrent_layers": [
           2,
           3,
-          4,
-          5
+          4
         ]
       }
     },
@@ -345,7 +337,6 @@
       },
       "flexible_parameters": {
         "recurrent_dim": [
-          32,
           64,
           128,
           192,
@@ -355,8 +346,7 @@
         "num_recurrent_layers": [
           2,
           3,
-          4,
-          5
+          4
         ]
       }
     },
@@ -404,7 +394,6 @@
       },
       "flexible_parameters": {
         "recurrent_dim": [
-          32,
           64,
           128,
           192,
@@ -414,8 +403,7 @@
         "num_recurrent_layers": [
           2,
           3,
-          4,
-          5
+          4
         ]
       }
     },
@@ -453,7 +441,6 @@
       },
       "flexible_parameters": {
         "recurrent_dim": [
-          32,
           64,
           128,
           192,
@@ -463,8 +450,7 @@
         "num_recurrent_layers": [
           2,
           3,
-          4,
-          5
+          4
         ]
       }
     },
@@ -512,7 +498,6 @@
       },
       "flexible_parameters": {
         "recurrent_dim": [
-          32,
           64,
           128,
           192,
@@ -522,8 +507,7 @@
         "num_recurrent_layers": [
           2,
           3,
-          4,
-          5
+          4
         ]
       }
     },
@@ -542,7 +526,6 @@
       },
       "flexible_parameters": {
         "recurrent_dim": [
-          32,
           64,
           128,
           192,
@@ -552,8 +535,7 @@
         "num_recurrent_layers": [
           2,
           3,
-          4,
-          5
+          4
         ]
       }
     },
@@ -572,7 +554,6 @@
       },
       "flexible_parameters": {
         "recurrent_dim": [
-          32,
           64,
           128,
           192,
@@ -582,8 +563,7 @@
         "num_recurrent_layers": [
           2,
           3,
-          4,
-          5
+          4
         ]
       }
     },
@@ -621,7 +601,6 @@
       },
       "flexible_parameters": {
         "recurrent_dim": [
-          32,
           64,
           128,
           192,
@@ -631,8 +610,7 @@
         "num_recurrent_layers": [
           2,
           3,
-          4,
-          5
+          4
         ]
       }
     },
@@ -680,7 +658,6 @@
       },
       "flexible_parameters": {
         "recurrent_dim": [
-          32,
           64,
           128,
           192,
@@ -690,8 +667,7 @@
         "num_recurrent_layers": [
           2,
           3,
-          4,
-          5
+          4
         ]
       }
     },
@@ -729,7 +705,6 @@
       },
       "flexible_parameters": {
         "recurrent_dim": [
-          32,
           64,
           128,
           192,
@@ -739,8 +714,7 @@
         "num_recurrent_layers": [
           2,
           3,
-          4,
-          5
+          4
         ]
       }
     },
@@ -788,7 +762,6 @@
       },
       "flexible_parameters": {
         "recurrent_dim": [
-          32,
           64,
           128,
           192,
@@ -798,8 +771,7 @@
         "num_recurrent_layers": [
           2,
           3,
-          4,
-          5
+          4
         ]
       }
     },
@@ -837,7 +809,6 @@
       },
       "flexible_parameters": {
         "recurrent_dim": [
-          32,
           64,
           128,
           192,
@@ -847,8 +818,7 @@
         "num_recurrent_layers": [
           2,
           3,
-          4,
-          5
+          4
         ]
       }
     },
@@ -896,7 +866,6 @@
       },
       "flexible_parameters": {
         "recurrent_dim": [
-          32,
           64,
           128,
           192,
@@ -906,8 +875,7 @@
         "num_recurrent_layers": [
           2,
           3,
-          4,
-          5
+          4
         ]
       }
     }

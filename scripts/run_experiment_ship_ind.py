@@ -24,7 +24,7 @@ def main():
         action = 'CONTINUE'
 
     if reportin_path.exists():
-        subprocess.call([
+        return_code = subprocess.call([
             'deepsysid',
             'session',
             '--enable-cuda',
@@ -34,7 +34,7 @@ def main():
             action
         ], env=environment)
     else:
-        subprocess.call([
+        return_code = subprocess.call([
             'deepsysid',
             'session',
             '--enable-cuda',
@@ -42,6 +42,9 @@ def main():
             reportout_path,
             action
         ], env=environment)
+
+    if return_code != 0:
+        print('Failed running gridsearch session. Stopping.')
 
     action = 'TEST_BEST'
     subprocess.call([
