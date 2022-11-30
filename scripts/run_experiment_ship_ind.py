@@ -18,12 +18,9 @@ def main():
 
     environment = load_environment(environment_path)
 
-    if not reportin_path.exists():
-        action = 'NEW'
-    else:
-        action = 'CONTINUE'
-
     if reportin_path.exists():
+        print('Continuing session...')
+        action = 'CONTINUE'
         return_code = subprocess.call([
             'deepsysid',
             'session',
@@ -34,6 +31,8 @@ def main():
             action
         ], env=environment)
     else:
+        print('Starting session from fresh.')
+        action = 'NEW'
         return_code = subprocess.call([
             'deepsysid',
             'session',
