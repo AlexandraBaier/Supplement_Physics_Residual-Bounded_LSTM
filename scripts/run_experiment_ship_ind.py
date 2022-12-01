@@ -44,6 +44,7 @@ def main():
 
     if return_code != 0:
         print('Failed running gridsearch session. Stopping.')
+        return
 
     action = 'TEST_BEST'
     subprocess.call([
