@@ -36,3 +36,15 @@ python scripts/run_experiment_pelican.py {device}
 Trained models are found in `models`, results in `results`, and datasets in `datasets`.
 Environment variables pointing to the models, results, and configuration for each experiment are found in
 `environment`.
+
+To summarize the results on the test set run the following script:
+```shell
+python scripts/summarize_results.py
+```
+
+To summarize the results for the ablation study on the clipping-accuracy trade-off run the following:
+```shell
+python scripts/summarize_threshold_results.py
+```
+
+Both `summarize` scripts will deposit CSV files in the results directories of the respective dataset.
