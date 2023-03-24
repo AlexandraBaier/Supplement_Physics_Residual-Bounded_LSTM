@@ -5,10 +5,9 @@ import pathlib
 
 from deepsysid.pipeline.configuration import ExperimentConfiguration, ExperimentGridSearchTemplate
 from deepsysid.pipeline.evaluation import evaluate_model
-from deepsysid.pipeline.gridsearch import ExperimentSessionReport
 from deepsysid.pipeline.testing.runner import test_model
 
-from pbrl_utils import load_environment
+from pbrl.utils import load_environment, retrieve_tested_models, get_configuration_path
 
 
 def main():
@@ -19,28 +18,17 @@ def main():
     device_idx = int(args.device)
 
     main_path = pathlib.Path(__file__).parent.parent.absolute()
-    configuration_path = main_path.joinpath('configuration').joinpath('ship.json')
     report_path = main_path.joinpath('configuration').joinpath('progress-ship.json')
     environment_path = main_path.joinpath('environment').joinpath('ship-ood.env')
     environment = load_environment(environment_path)
 
+    configuration_path = get_configuration_path(environment_file_path=environment_path)
     with configuration_path.open(mode='r') as f:
         configuration = ExperimentConfiguration.from_grid_search_template(
             ExperimentGridSearchTemplate.parse_obj(json.load(f))
         )
 
-    with report_path.open(mode='r') as f:
-        report = ExperimentSessionReport.parse_obj(json.load(f))
-
-    if report.tested_models is None:
-        print(
-            'Could not find any tested model in the progress report at '
-            f'{report_path}. Run run_experiment_ship_ind.py to complete experiments '
-            f'on in-distribution dataset first.'
-        )
-        return
-
-    models = report.tested_models
+    models = retrieve_tested_models(report_path)
     print(
         'Found the following models to test on out-of-distribution '
         f'dataset: {", ".join(models)}.'
